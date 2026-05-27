@@ -9,7 +9,7 @@
 
 _(Descreva em suas palavras o que cada parte do código faz.)_
 
-### R:
+### R: Urna Eletrônica. Ele permite registrar votos para candidatos pré-definidos e, ao final, exibe um relatório com a apuração dos resultados. O programa já começa com candidatos configurados (Candidato A, Candidato B e Voto em Branco) associados a números específicos (13, 22 e 00). O programa ele:Exibe a lista de candidatos na tela,Pede para o usuário digitar o número do candidato,Se o número for válido, o voto é computado. O ciclo de votação continua até que alguém digite a palavra 'fim'. E ele também Calcula a quantidade de votos que cada candidato recebeu e o percentual de votos de cada um em relação ao total no final Exibe o total geral de votos registrados.
 
 ---
 
