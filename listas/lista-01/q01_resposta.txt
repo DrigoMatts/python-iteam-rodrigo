@@ -21,7 +21,9 @@ SUA RESPOSTA:
 
 (escreva aqui com suas próprias palavras)
 
-### R:
+### R: Porque no python ao fazer (b=a), você não está criando uma cópia da lista. Ambos os nomes (a e b) passam para o mesmo objeto na memória. Exemplo quando eu uso (b.append(40)) o código está alterando o objeto compartilhado. 
+Como (a) aponta para esse mesmo objeto a mudança é visível atráves de ambos. Na linha c = a.copy(), um novo objeto é criado na memória com os mesmos valores, porque quando eu adiciono 99 em c,as listas a e b permanecem intactas.
+
 a = [10, 20, 30]
 b = a
 b.append(40)
