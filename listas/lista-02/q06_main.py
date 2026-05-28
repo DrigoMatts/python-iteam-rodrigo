@@ -1,6 +1,6 @@
 # Lista 02 — Questão 06: Módulo de Estatísticas (programa principal)
-# Aluno: (seu nome)
-# Data:  (data)
+# Aluno: (RodrigoMatosGomes)
+# Data:  (27/05/2026)
 
 # ── Enunciado ───────────────────────────────────────────────────────────────
 # q06_estatisticas.py: crie o módulo com as funções:

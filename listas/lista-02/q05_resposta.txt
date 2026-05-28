@@ -1,6 +1,6 @@
 Lista 02 — Questão 05: Funções de Alta Ordem
-Aluno: (seu nome)
-Data:  (data)
+Aluno: (RodrigoMatosGomes)
+Data:  (27/05/2026)
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 ENUNCIADO:
@@ -16,4 +16,34 @@ Em q05_resposta.txt: explique o que significa dizer que funções são
 SUA RESPOSTA:
 
 (escreva aqui com suas próprias palavras)
+
+### R: Dizer que funções são "cidadãs de primeira classe" significa que elas são tratadas como qualquer outro objeto (como números, strings ou listas).
+Isso implica que as funções podem ser atribuídas a variáveis,ser passadas como argumentos para outras funções,ser retornadas como resultado de outras funções.
+E armazenadas em estruturas de dados (como listas ou dicionários).
+
+
+# Função principal
+def aplicar(lista, funcao):
+    nova_lista = []
+    for elemento in lista:
+        nova_lista.append(funcao(elemento))
+    return nova_lista
+
+# Lista de teste
+numeros = [1, 2, 3, 4, 5]
+
+# (a) Função que eleva ao quadrado
+def quadrado(x):
+    return x ** 2
+
+resultado_a = aplicar(numeros, quadrado)
+print(f"Ao quadrado: {resultado_a}")
+
+# (b) Função que retorna True se o número for par
+def eh_par(x):
+    return x % 2 == 0
+
+resultado_b = aplicar(numeros, eh_par)
+print(f"É par?: {resultado_b}")
+
 

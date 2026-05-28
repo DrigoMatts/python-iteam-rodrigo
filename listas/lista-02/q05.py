@@ -1,6 +1,6 @@
 # Lista 02 — Questão 05: Funções de Alta Ordem
-# Aluno: (seu nome)
-# Data:  (data)
+# Aluno: (RodrigoMatosGomes)
+# Data:  (27/05/2026)
 
 # ── Enunciado ───────────────────────────────────────────────────────────────
 # Em q05.py: escreva aplicar(lista, funcao) que retorna uma nova lista com a

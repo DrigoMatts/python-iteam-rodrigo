@@ -1,6 +1,6 @@
 Lista 02 — Questão 02: Escolha da Estrutura
-Aluno: (seu nome)
-Data:  (data)
+Aluno: (RodrigoMatosGomes)
+Data:  (27/05/2026)
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 ENUNCIADO:
@@ -16,3 +16,9 @@ SUA RESPOSTA:
 
 (escreva aqui com suas próprias palavras)
 
+### R:
+A) Tuple, porque as Coordenadas que representam uma localização em um ponto fixo, as tuplas são 'ideais' para agrupar valores relacionados que não devem ser alterados.
+B) Set, porque o cpf tem números únicos,impedindo duplicadas automaticamente o conjuto garante que a busca seja extremamente rápida para verificar se um CPF já existe.
+C) Dict, porque ele é perfeito para mapear um par chave-valor,permitindo o acesso rápido ao preço através do código.
+D) List, porque as listas são mutáveis e ordenadas. Permitindo adicionar novos elementos (notas). Por exemplo conforme o semestre escolar avança na ordem que ocorrem.
+E) Tuple, por serem imutáveis elas podem ser usadas como chaves de dicionário. Como os dias da semana são valores fixos e conhecidos.

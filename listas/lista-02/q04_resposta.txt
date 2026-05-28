@@ -1,6 +1,6 @@
 Lista 02 — Questão 04: Escopo — LEGB
-Aluno: (seu nome)
-Data:  (data)
+Aluno: (RodrigoMatosGomes)
+Data:  (27/05/2026)
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 ENUNCIADO:
@@ -23,4 +23,20 @@ Explique a regra de escopo (LEGB) que determina cada resultado.
 SUA RESPOSTA:
 
 (escreva aqui com suas próprias palavras)
+
+### R: 
+print(x) dentro de interna() : 
+Regra LEGB,O Python busca primeiro no escopo Local (dentro de interna), onde x não existe. 
+Em seguida, busca no escopo Enclosing (da função externa), onde encontra x = 'enclosing'.
+
+print(x) dentro de externa() :
+Regra LEGB,A busca começa no escopo Local de externa. 
+Como x foi definido logo no início desta função (x = 'enclosing'), ele utiliza esse valor local.
+
+
+print(x) fora :
+Regra LEGB, esse print está no nível principal do script. 
+Portanto, ele acessa diretamente o escopo global,onde a variável x foi definida inicialmente como 'global'. 
+As alterações feitas dentro das funções não afetam o escopo global porque ele não foi utilizada como a palavra-chave.
+
 
