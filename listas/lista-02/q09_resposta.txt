@@ -1,6 +1,6 @@
 Lista 02 — Questão 09: Encapsulamento e Propriedades
-Aluno: (seu nome)
-Data:  (data)
+Aluno: (RodrigoMatosGomes)
+Data:  (28/05/2026)
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 ENUNCIADO:
@@ -17,3 +17,10 @@ SUA RESPOSTA:
 
 (escreva aqui com suas próprias palavras)
 
+### R: 
+A diferença em python entre eles residem na intenção de acesso e na aplicação de "name mangling"= distorção de nomes.
+_atributo, é uma convenção indicando que o atributo é para uso interno da classe ou de suas subclasses, ele não possui
+restrição técnica real de acesso. É um sinal para outros desenvolvedores não o utilizarem direto fora da calsse.
+
+__atributo, Invoca o name mangling,O Python altera o nome do atributo internamente para _NomeDaClasse__atributo [1]. 
+Isso torna o acesso direto mais difícil, sendo usado principalmente para evitar conflitos de nomes em herança, simulando um membro privado [2].

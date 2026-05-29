@@ -1,6 +1,6 @@
 Lista 02 — Questão 07: Interpretação de Classe
-Aluno: (seu nome)
-Data:  (data)
+Aluno: (RodrigoMatosGomes)
+Data:  (28/05/2026)
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 ENUNCIADO:
@@ -14,3 +14,15 @@ SUA RESPOSTA:
 
 (escreva aqui com suas próprias palavras)
 
+#### R:
+A) Ele é um atributo de instância, representa o estado onde o valor em dinheiro de um objeto específico da classe.
+Usamos self para que o valor seja persistente e acessível para todos os métodos do objeto. SE usássemos uma variável local,o valor
+existiria apenas durante a execução daquele método específico e seria "esquecido" assim que a função terminasse.
+
+B) O programa verificará se o saldo é suficiente(if self.saldo >= valor).
+como 500 < 2000, será false. O saque não será realizado eo saldo permanecerá em 500.
+Dependendo do código, ela pode ser exibida uma mensagem de "Saldo insuficiente".
+
+C) Considerando que o atributo do número da conta seja self.numero. Ficaria assim:
+def __str__(self):
+    return f"Conta: {self.numero} | Saldo: R$ {self.saldo:.2f}"
