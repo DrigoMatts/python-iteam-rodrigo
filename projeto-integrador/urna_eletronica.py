@@ -2,34 +2,27 @@
 # Aluno: (RodrigoMatosGomes)
 
 # ── Escreva sua solução abaixo ──────────────────────────────────────
+
+from urna import Urna
 from candidatos import Candidato
-from relatorio import exibir_resultado
+from excecoes import CandidatoNaoEncontradoError
 
-# Cadastro de candidatos em um dicionário (chave: número)
-candidatos = {
-    10: Candidato("João Silva", 10, "Partido A"),
-    20: Candidato("Maria Souza", 20, "Partido B")
-}
-
-def iniciar_urna():
-    print("Urna Eletrônica Iniciada.")
+def main():
+    urna = Urna()
+    urna.adicionar_candidato(Candidato("João Silva", 10, "Partido A"))
+    
     while True:
+        entrada = input("Digite o número (ou 'fim'): ")
+        if entrada.lower() == 'fim': break
+        
         try:
-            voto = input("Digite o número do candidato (ou 'fim' para encerrar): ")
-            
-            if voto.lower() == 'fim':
-                break
-            
-            numero = int(voto)
-            if numero in candidatos:
-                candidatos[numero].receber_voto()
-                print("Voto registrado com sucesso!")
-            else:
-                print("Candidato não encontrado. Voto nulo.")
+            urna.computar_voto(int(entrada))
         except ValueError:
-            print("Entrada inválida! Digite apenas números.")
-
-    exibir_resultado(candidatos)
+            print("Entrada inválida!")
+        except CandidatoNaoEncontradoError as e:
+            print(e)
+            
+    urna.exibir_resultado()
 
 if __name__ == "__main__":
-    iniciar_urna()
+    main()

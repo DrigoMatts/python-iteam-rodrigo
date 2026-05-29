@@ -13,7 +13,7 @@
 # digitadas pelo usuário.
 
 # ── Sua solução abaixo ──────────────────────────────────────────────────────
-### R:
+## R:
 
 import math
 

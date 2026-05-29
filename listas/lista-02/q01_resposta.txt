@@ -22,6 +22,17 @@ SUA RESPOSTA:
 ### R:
 
 dados/variaveis: {'nome': 'Ana', 'notas': [8.0, 7.5, 9.0, 6.5], 'media': 7.75}
-media do append: 7.75
-chaves: ['nome', 'notas', 'media']
+Cria um dicionário com o nome "Ana" e uma lista de três notas.
 
+dados["notas"].append(6.5)
+Adiciona o valor \(6.5\) à lista de notas. Agora, a lista é [8.0, 7.5, 9.0, 6.5].
+
+media = sum(dados["notas"]) / len(dados["notas"])
+Soma as notas: \(8.0 + 7.5 + 9.0 + 6.5 = 31.0\).
+Divide pelo total de elementos (\(4\)): \(31.0 / 4 = 7.75\).
+
+dados["media"] = round(media, 2)
+Arredonda o valor para duas casas decimais (\(7.75\)) e adiciona a chave "media" ao dicionário.
+
+chaves = list(dados.keys())
+Extrai as chaves do dicionário em uma lista: ['nome', 'notas', 'media'].
